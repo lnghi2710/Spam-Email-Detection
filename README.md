@@ -2,7 +2,7 @@
 
 ## Introduction
 This project aims to build a machine learning model to classify emails as **Spam** or **Ham (Not Spam)**.  
-It demonstrates a complete NLP workflow including data preprocessing, feature extraction, model training, and evaluation using Logistic Regression.
+It demonstrates a complete machine learning workflow for text classification, including data preprocessing, feature extraction, model training, and evaluation using Logistic Regression.
 
 ---
 
@@ -33,12 +33,20 @@ Required libraries:
 ### Installation
 Clone the repository and install dependencies:
 
+1. Clone this repository to your local machine using the following command:
 ```bash
 git clone https://github.com/lnghi2710/Spam-Email-Detection.git
 ```
+2. Navigate to the project directory:
+```bash
+cd Spam-Email-Detection
+```
+3. Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
 
 ## Usage
 To run the project, execute the main training script:
@@ -63,6 +71,7 @@ The script will automatically:
 - Train the Logistic Regression model
 - Evaluate the model and display performance metrics
 
+---
 
 ## Dataset
 
@@ -82,6 +91,8 @@ Solutions Applied:
 - TF-IDF vectorization to handle sparse text data
 - Class weighting during model training to reduce bias
 
+---
+
 ## Model Training
 - Algorithm: Logistic Regression
 - Feature extraction: TF-IDF with unigrams and bigrams
@@ -89,12 +100,16 @@ Solutions Applied:
 - Class weights applied to improve spam detection performance
 Logistic Regression is chosen because it performs well on high-dimensional sparse data and provides interpretable results.
 
+---
+
 ## Evaluation
 The model performance is evaluated using:
 - Accuracy score
 - Precision, Recall, and F1-score
 - Confusion matrix
 These metrics provide insight into how effectively the model distinguishes spam emails from legitimate ones.
+
+---
 
 ## Contributing
 - Contributions are welcome.

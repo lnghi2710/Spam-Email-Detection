@@ -71,6 +71,15 @@ The script will automatically:
 - Train the Logistic Regression model
 - Evaluate the model and display performance metrics
 
+```bash
+python predict.py
+```
+
+The script will automatically:
+- Load the trained Logistic Regression model and TF-IDF vectorizer
+- Predict whether the email is Spam or Ham
+- Display the prediction result
+
 ---
 
 ## Dataset

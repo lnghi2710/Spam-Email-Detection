@@ -1,6 +1,7 @@
-import  numpy as np
+import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import joblib
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
@@ -119,3 +120,11 @@ plt.legend()
 plt.grid(axis="y", linestyle="--", alpha=0.6)
 plt.tight_layout()
 plt.show()
+
+
+# save model
+joblib.dump(model, "spam_model.pkl")
+joblib.dump(vectorizer, "tfidf.pkl")
+
+model = joblib.load("spam_model.pkl")
+vectorizer = joblib.load("tfidf.pkl")

@@ -102,6 +102,42 @@ Solutions Applied:
 
 ---
 
+## Pipline
+
+```text
+Raw Email Data (CSV)
+        |
+        v
+Data Loading
+(Read CSV, drop unused columns)
+        |
+        v
+Text Cleaning
+(lowercase, remove punctuation, regex)
+        |
+        v
+Feature Engineering
+(TF-IDF Vectorization)
+        |
+        v
+Label Encoding
+(ham -> 0, spam -> 1)
+        |
+        v
+Train / Test Split
+        |
+        v
+Model Training
+(Logistic Regression)
+        |
+        v
+Model Evaluation
+(Accuracy, Confusion Matrix, F1-score)
+```
+
+
+---
+
 ## Model Training
 - Algorithm: Logistic Regression
 - Feature extraction: TF-IDF with unigrams and bigrams
